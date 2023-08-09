@@ -1,0 +1,82 @@
+.route {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .route-mid {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+  }
+  
+  .route-mid h1 {
+    padding-top: 4rem !important;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .routeImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    filter: blur(3px) brightness(0.8);
+  }
+
+  .route-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  .route-text h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: #ffeddd ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .route-text p {
+    color: #f4f4f4;
+    font-size: 1.3rem;
+    padding: 0.5rem 0 2rem 0;
+  }
+  
+  .route-text .show {
+    text-decoration: none;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #222;
+  }
+  
+  .route-text .hide {
+    display: none;
+  }
+  
+  @media screen and (max-width: 555px) {
+    .route-text h1 {
+      padding: 10px 20px;
+    }
+    .route-text p {
+      font-size: 1.1rem;
+      padding: 0rem 0 2rem 0;
+    }
+    .route-text .show {
+      padding: 0.6rem 1.1rem;
+      border-radius: 3px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+  
