@@ -5,6 +5,12 @@
 
 .trip h1 {
   font-size: 3rem;
+  color: #660000;
+}
+
+.looking-link {
+  font-size: 1.5rem;
+  color: #660000;
 }
 
 .tripcard {
@@ -14,22 +20,27 @@
 }
 
 .t-card {
+  display: flex;
+  flex-direction: column;
   width: 32%;
-  text-align: start;
+  text-align: center;
   box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
   border-radius: 7px;
-  cursor: pointer;
   padding: 1rem 0.8rem;
+  margin-bottom: 5%;
+
 }
 .t-image {
-  height: 200px;
+  height: 100%;
+  justify-content: center;
+  align-items: stretch;
   overflow: hidden;
   border-radius: 7px;
 }
 
 .t-image img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
 }
@@ -42,6 +53,39 @@
 .t-card h4 {
   font-size: 1.3rem;
   padding: 0.9rem 0 0.2rem 0;
+}
+
+.t-card .show {
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+  text-decoration: none;
+  background: #9EC1A3;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  color: #ffeddd;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* New shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* New transition */
+  cursor: pointer;  /* Indicates clickable area */
+}
+
+/* Hover effect for the button */
+.t-card .show:hover {
+  background: #86b091; 
+  transform: translateY(-3px);  /* Gives a subtle lift effect */
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12);  /* Increase shadow on hover for depth */
+}
+
+
+.show .whatsapp-icon {
+  font-size: 1.2rem;
+  color: #ffeddd;
+  vertical-align: middle; 
+  margin-right: 8px;    
 }
 
 @media screen and (max-width: 850px) {

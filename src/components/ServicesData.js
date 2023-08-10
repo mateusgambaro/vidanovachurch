@@ -1,11 +1,11 @@
 import { FaWhatsapp } from "react-icons/fa";
 import "./TripStyles.css";
 
-function TripData(props) {
+function ServicesData(props) {
   return (
-    <div className="t-card">
-      <div className="t-image">
-        <img src={props.image} alt="trip" />
+    <div className="s-card">
+      <div className="s-image">
+        <img src={props.image} alt="service" />
       </div>
       <h4>{props.heading}</h4>
       <p>{props.text}</p>
@@ -16,4 +16,4 @@ function TripData(props) {
   );
 }
 
-export default TripData;
+export default ServicesData;
