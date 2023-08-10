@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import AboutImg from "../assets/2.jpg";
+import FundoBG from "../assets/fundo_dias_sola.jpg";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import RoutesHero from "src/components/RoutesHero";
@@ -10,7 +10,7 @@ function Contact() {
       <Navbar />
       <RoutesHero
         cName="route-mid"
-        routeImg={AboutImg}
+        routeImg={FundoBG}
         title="Contato"
         btnClass="hide"
       />

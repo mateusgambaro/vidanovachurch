@@ -1,10 +1,56 @@
+import { Button, TextField } from "@mui/material";
 import "../components/ContactFormStyles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function ContactForm() {
+  const whatsAppAPI = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}`
+
   return (
     <>
-      <h1 style={{marginTop: '30px'}}>Ainda tem dúvidas? Nos envie uma mensagem!</h1>
+      <h1 className="title">
+        Como podemos te ajudar?
+      </h1>
       <div className="contact-section">
+        <div className="form-container">
+          <form noValidate autoComplete="off">
+            <TextField
+              fullWidth
+              margin="normal"
+              label="Nome"
+              variant="outlined"
+            />
+            <TextField
+              fullWidth
+              margin="normal"
+              label="Email"
+              variant="outlined"
+            />
+            <TextField
+              fullWidth
+              margin="normal"
+              label="Assunto"
+              variant="outlined"
+            />
+            <TextField
+              fullWidth
+              margin="normal"
+              label="Mensagem"
+              variant="outlined"
+              multiline
+              rows={4}
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              type="submit"
+              style={{ marginTop: "16px" }}
+            >
+              Enviar
+            </Button>
+          </form>
+        </div>
         <div className="map-container">
           <iframe
             style={{ border: 0 }}
@@ -15,15 +61,22 @@ function ContactForm() {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-        </div>
-        <div className="form-container">
-          <form>
-            <input placeholder="Name" />
-            <input placeholder="Email" />
-            <input placeholder="Subject" />
-            <textarea placeholder="Message" rows="4"></textarea>
-            <button>Send Message</button>
-          </form>
+          <div className="address-details">
+            <p>
+              R. Belmira Loureiro de Almeida, 526 - 32, Jardim Piratininga,
+              Sorocaba - SP
+            </p>
+            <div className="contact-buttons">
+              <button className="whatsapp-btn">
+                <FontAwesomeIcon icon={faWhatsapp} />
+                &nbsp; (15) 99812-2314
+              </button>
+              <a href="tel:+5515998122314" className="call-btn">
+                <FontAwesomeIcon icon={faPhone} size="1x" />
+                &nbsp; Ligar
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>

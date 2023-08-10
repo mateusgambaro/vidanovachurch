@@ -3,7 +3,6 @@ import "./OfficeDataStyles.css";
 
 function OfficeData(props) {
   const [showModal, setShowModal] = useState(false);
-  console.log('showmodal', showModal)
   return (
     <div className="o-card">
       <div className="o-image"  onClick={() => setShowModal(true)}>

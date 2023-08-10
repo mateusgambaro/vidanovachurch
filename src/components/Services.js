@@ -3,6 +3,8 @@ import handShake from "../assets/hand-shake.png";
 import contract from "../assets/contract.png";
 import auction from "../assets/auction.png";
 import scalesOfJustice from "../assets/scales-of-justice.png";
+import growth from "../assets/growth.png";
+import portfolio from "../assets/portfolio.png";
 import ServicesData from "./ServicesData";
 
 function Services() {
@@ -27,7 +29,7 @@ function Services() {
         />
         <ServicesData
           image={auction}
-          heading="Processo Judicial          "
+          heading="Processo Judicial"
           text="Realizamos todo seu processo, desde cálculos, processo administrativo, judicial, até o imposto de renda. Este é um serviço para você que não quer se incomodar com nada."
           btnClass="show"
           buttonText="Processar alguém"
@@ -35,10 +37,26 @@ function Services() {
         />
         <ServicesData
           image={scalesOfJustice}
-          heading="Processo Judicial          "
-          text="Realizamos todo seu processo, desde cálculos, processo administrativo, judicial, até o imposto de renda. Este é um serviço para você que não quer se incomodar com nada."
+          heading="Diagnóstico de Revisões"
+          text="Analisamos o seu caso, cálculos e o processo do benefício concedido no INSS, para então conseguirmos identificar o que precisa ser revisado e quanto o seu benefício pode aumentar."
           btnClass="show"
-          buttonText="Processar alguém"
+          buttonText="Realizar revisão"
+          url="/"
+        />
+        <ServicesData
+          image={growth}
+          heading="Revisão da Vida Toda - A revisão dos seus direitos"
+          text="Análise completa em benefícios que sofreram mudanças de moedas antes do plano real. Este serviço descobre se a Revisão da Vida Toda é vantajosa para você."
+          btnClass="show"
+          buttonText="O que é vida?"
+          url="/"
+        />
+        <ServicesData
+          image={portfolio}
+          heading="Peças Administrativas"
+          text="Analisamos o seu caso e realizamos uma peça administrativa exclusiva para você, ela é um documento guia para o INSS no momento da análise do seu pedido."
+          btnClass="show"
+          buttonText="Analisar"
           url="/"
         />
       </div>

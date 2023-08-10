@@ -18,7 +18,7 @@ function HomeHero(props) {
               <span className="static-text">{props.text}</span>
               <Typed
                 className="typed-title"
-                strings={["INSS", "APOSENTADORIA", "DIVÓRCIO"]}
+                strings={["INSS", "APOSENTADORIA", "PREVIDÊNCIA", "PROCESSOS"]}
                 typeSpeed={120}
                 backSpeed={140}
                 loop

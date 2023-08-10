@@ -1,7 +1,7 @@
 .footer {
   background: #660000;
   color: #ffcb99;
-  padding: 4rem 6rem;
+  padding: 1rem 6rem;
 }
 
 .top {
@@ -9,7 +9,6 @@
   align-items: center;
   text-align: start;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .top p {
@@ -28,7 +27,7 @@
 }
 
 .bottom {
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   text-align: start;
   display: flex;
   justify-content: space-between;
@@ -45,6 +44,15 @@
   padding: 1rem 0 0.8rem 0;
 }
 
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 150px;
+}
+
 .bottom a {
   text-decoration: none;
   color: #ffeddd ;
@@ -54,7 +62,7 @@
 
 @media screen and (max-width: 850px) {
   .footer {
-    padding: 4rem 2rem;
+    padding: 1rem 1.2rem;
   }
 
   .footer i {
@@ -62,6 +70,19 @@
   }
 
   .bottom div {
-    width: 50%;
+    width: 100%;
   }
+
+  .logo{
+    display: flex;
+  }
+  
+  .logo-image {
+    width: 80px;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+  
 }

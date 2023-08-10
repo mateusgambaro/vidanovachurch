@@ -4,8 +4,10 @@ import Footer from "../components/Footer";
 import Trip from "src/components/Trip";
 import testeImg from "../assets/teste.jpg";
 import escritorio from "../assets/escritorio.jpg";
+import { contactMessages } from "src/messages/contact";
 
 function Home() {
+  const whatsAppAPI = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${contactMessages.helloMessage}`
   return (
     <>
       <Navbar />
@@ -17,7 +19,7 @@ function Home() {
         text="Atendimento para"
         btnClass="show"
         buttonText="Entre em contato"
-        url="/"
+        url={whatsAppAPI}
       />
       <Trip />
       <Footer />

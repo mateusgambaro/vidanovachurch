@@ -1,13 +1,23 @@
 import "./FooterStyles.css";
+import icone_white from "../assets/icone_white.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationPin, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
     <>
       <div className="footer">
         <div className="top">
-          <div>
-            <h1>Dias & Sola</h1>
-            <p>ADVOGADAS ASSOCIADAS</p>
+          <div className="logo">
+            <img
+              src={icone_white}
+              alt="icone_logo"
+              className="logo-image"
+            />
+            <div>
+              <h1>Dias & Sola</h1>
+              <p>ADVOGADAS ASSOCIADAS</p>
+            </div>
           </div>
           <div>
             <a href="https://fontawesome.com/">
@@ -21,13 +31,19 @@ const Footer = () => {
 
         <div className="bottom">
           <div>
-            <h4>Project</h4>
-            <a href="https://fontawesome.com/">Changelog</a>
+            <h4>Endereço</h4>
+            <p>
+              R. Belmira Loureiro de Almeida, 526 - 32, Jardim Piratininga,
+              Sorocaba - SP
+            </p>
+            <br />
+            <p>(15) 99173-9262 - (15) 99636-0446</p>
+            {/* <a href="https://fontawesome.com/">Changelog</a>
             <a href="https://fontawesome.com/">Status</a>
             <a href="https://fontawesome.com/">License</a>
-            <a href="https://fontawesome.com/">All Versions</a>
+            <a href="https://fontawesome.com/">All Versions</a> */}
           </div>
-          <div>
+          {/* <div>
             <h4>Community</h4>
             <a href="https://fontawesome.com/">GitHub</a>
             <a href="https://fontawesome.com/">Issues</a>
@@ -39,12 +55,11 @@ const Footer = () => {
             <a href="https://fontawesome.com/">Support</a>
             <a href="https://fontawesome.com/">Troubleshooting</a>
             <a href="https://fontawesome.com/">Contact Us</a>
-          </div>
+          </div> */}
           <div>
-            <h4>Others</h4>
+            <h4>Links</h4>
             <a href="https://fontawesome.com/">Terms of Service</a>
             <a href="https://fontawesome.com/">Privacy Policy</a>
-            <a href="https://fontawesome.com/">License</a>
           </div>
         </div>
       </div>

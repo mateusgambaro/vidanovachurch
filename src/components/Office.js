@@ -1,11 +1,9 @@
 import "./OfficeDataStyles.css";
 import OfficeData from "./OfficeData";
-import Trip1 from "../assets/5.jpg";
-import Trip2 from "../assets/8.jpg";
-import Trip3 from "../assets/6.jpg";
+import iconeDS from '../assets/icone_ds.jpg'
 
 function Office() {
-  const images = [Trip1, Trip2, Trip3];
+  const images = [iconeDS, iconeDS, iconeDS];
   return (
     <div className="office">
       <hr class="rounded"/>
