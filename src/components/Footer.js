@@ -20,10 +20,10 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <a href="https://fontawesome.com/">
+            <a href="https://www.facebook.com/diasesolaadv" target="_noblank">
               <i className="fa-brands fa-facebook-square"></i>
             </a>
-            <a href="https://fontawesome.com/">
+            <a href="https://www.instagram.com/diasesola.adv" target="_noblank">
               <i className="fa-brands fa-instagram-square"></i>
             </a>
           </div>

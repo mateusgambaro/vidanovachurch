@@ -63,6 +63,7 @@
   display: inline-block; 
   background-color: #25D366; 
   color: white;
+  text-decoration: none;  
 }
 
 .call-btn {

@@ -5,13 +5,11 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function ContactForm() {
-  const whatsAppAPI = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}`
+  const whatsAppAPI = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}`;
 
   return (
     <>
-      <h1 className="title">
-        Como podemos te ajudar?
-      </h1>
+      <h1 className="title">Como podemos te ajudar?</h1>
       <div className="contact-section">
         <div className="form-container">
           <form noValidate autoComplete="off">
@@ -67,10 +65,16 @@ function ContactForm() {
               Sorocaba - SP
             </p>
             <div className="contact-buttons">
-              <button className="whatsapp-btn">
+              <a
+                href={whatsAppAPI}
+                className="whatsapp-btn"
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faWhatsapp} />
                 &nbsp; (15) 99812-2314
-              </button>
+              </a>
               <a href="tel:+5515998122314" className="call-btn">
                 <FontAwesomeIcon icon={faPhone} size="1x" />
                 &nbsp; Ligar
