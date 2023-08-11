@@ -1,5 +1,5 @@
 import "./HomeHeroStyles.css";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import { FaWhatsapp } from 'react-icons/fa';
 
 function HomeHero(props) {
@@ -14,7 +14,7 @@ function HomeHero(props) {
         <div className="hero-content">
           <div className="hero-text">
             <h1>{props.title}</h1>
-            <div className="typed-title-container">
+            {/* <div className="typed-title-container">
               <span className="static-text">{props.text}</span>
               <Typed
                 className="typed-title"
@@ -23,7 +23,7 @@ function HomeHero(props) {
                 backSpeed={140}
                 loop
               />
-            </div>
+            </div> */}
             <a className={props.btnClass} href={props.url}>
               <FaWhatsapp className="whatsapp-icon" />{" "}
               {props.buttonText}
