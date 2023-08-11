@@ -6,8 +6,16 @@ import scalesOfJustice from "../assets/scales-of-justice.png";
 import growth from "../assets/growth.png";
 import portfolio from "../assets/portfolio.png";
 import ServicesData from "./ServicesData";
+import { serviceMessages } from "src/messages/services";
 
 function Services() {
+  const retirement = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.retirement}`;
+  const foresight = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.foresight}`;
+  const processMessage = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.process}`;
+  const diagnostic = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.diagnostic}`;
+  const lifeReview = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.lifeReview}`;
+  const administrationPieces = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.administrationPieces}`;
+
   return (
     <div className="service">
       <div className="servicecard">
@@ -17,7 +25,7 @@ function Services() {
           text="Organizamos e preparamos sua pré-aposentadoria, com objetivo de auxiliar na sua busca por uma aposentadoria rápida e com o melhor benefício possível"
           btnClass="show"
           buttonText="Quero me aposentar"
-          url="/"
+          url={retirement}
         />
         <ServicesData
           image={handShake}
@@ -25,7 +33,7 @@ function Services() {
           text="Serviço voltado para você que precisa conhecer o seu caso ou descobrir uma solução especializada para seu problema. Realizamos esse atendimento em todo Brasil e exterior."
           btnClass="show"
           buttonText="Consultar previdência"
-          url="/"
+          url={foresight}
         />
         <ServicesData
           image={auction}
@@ -33,7 +41,7 @@ function Services() {
           text="Realizamos todo seu processo, desde cálculos, processo administrativo, judicial, até o imposto de renda. Este é um serviço para você que não quer se incomodar com nada."
           btnClass="show"
           buttonText="Processar alguém"
-          url="/"
+          url={processMessage}
         />
         <ServicesData
           image={scalesOfJustice}
@@ -41,7 +49,7 @@ function Services() {
           text="Analisamos o seu caso, cálculos e o processo do benefício concedido no INSS, para então conseguirmos identificar o que precisa ser revisado e quanto o seu benefício pode aumentar."
           btnClass="show"
           buttonText="Realizar revisão"
-          url="/"
+          url={diagnostic}
         />
         <ServicesData
           image={growth}
@@ -49,7 +57,7 @@ function Services() {
           text="Análise completa em benefícios que sofreram mudanças de moedas antes do plano real. Este serviço descobre se a Revisão da Vida Toda é vantajosa para você."
           btnClass="show"
           buttonText="O que é vida?"
-          url="/"
+          url={lifeReview}
         />
         <ServicesData
           image={portfolio}
@@ -57,7 +65,7 @@ function Services() {
           text="Analisamos o seu caso e realizamos uma peça administrativa exclusiva para você, ela é um documento guia para o INSS no momento da análise do seu pedido."
           btnClass="show"
           buttonText="Analisar"
-          url="/"
+          url={administrationPieces}
         />
       </div>
       <div className="office">

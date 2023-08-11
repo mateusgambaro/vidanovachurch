@@ -37,7 +37,7 @@ const Footer = () => {
               Sorocaba - SP
             </p>
             <br />
-            <p>(15) 99173-9262 - (15) 99636-0446</p>
+            <p>(15) 99616-6186 - (15) 99812-2314</p>
             {/* <a href="https://fontawesome.com/">Changelog</a>
             <a href="https://fontawesome.com/">Status</a>
             <a href="https://fontawesome.com/">License</a>
