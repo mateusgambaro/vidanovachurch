@@ -29,7 +29,7 @@
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow to image */
   padding: 10px;
-  max-width: 600px;  
+  max-width: 400px;  
   flex-shrink: 1;
 }
 

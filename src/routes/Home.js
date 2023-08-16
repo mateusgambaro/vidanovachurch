@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar";
 import HomeHero from "../components/HomeHero";
 import Footer from "../components/Footer";
 import Trip from "src/components/Trip";
-import testeImg from "../assets/teste.jpg";
-import escritorio from "../assets/escritorio.jpg";
+import meninas from "../assets/diassola.jpg";
+import logoentrada from "../assets/entradalogo.jpg";
 import { contactMessages } from "src/messages/contact";
 
 function Home() {
@@ -13,8 +13,8 @@ function Home() {
       <Navbar />
       <HomeHero
         cName="hero"
-        heroImg={testeImg}
-        coverImg={escritorio}
+        heroImg={meninas}
+        coverImg={logoentrada}
         title="Cuidamos da sua Aposentadoria do início ao fim"
         text="Atendimento para"
         btnClass="show"

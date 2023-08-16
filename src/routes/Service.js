@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import RoutesHero from "../components/RoutesHero";
 import Footer from "../components/Footer";
-import aposentadoria from "../assets/aposentadoria.jpg"
+import servicos from "../assets/servicos.jpg"
 import Services from "src/components/Services";
 
 function Service() {
@@ -10,7 +10,7 @@ function Service() {
       <Navbar />
       <RoutesHero
         cName="route-mid"
-        routeImg={aposentadoria}
+        routeImg={servicos}
         title="Serviços"
         btnClass="hide"
       />

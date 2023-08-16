@@ -3,39 +3,92 @@ import "../components/ContactFormStyles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useRef, useState } from "react";
+import { CircularProgress } from "@mui/material";
+import emailjs from "emailjs-com";
+import { useSnackbar } from "notistack";
 
 function ContactForm() {
+  const { enqueueSnackbar } = useSnackbar();
+  const [loading, setLoading] = useState(false);
+  const formRef = useRef(null);
+  const isMounted = useRef(true);
+
   const whatsAppAPI = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}`;
+
+  useEffect(() => {
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
+
+  function sendEmail(e) {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_5qoe89c",
+        "template_zk0u7fi",
+        e.target,
+        "U8tQrYy3ZXpYwPrbP"
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          enqueueSnackbar("Email enviado com sucesso!", { variant: "success" });
+
+          if (formRef.current) {
+            formRef.current.reset();
+          }
+        },
+        (error) => {
+          setLoading(false);
+          enqueueSnackbar("Erro ao enviar o email. Tente novamente.", {
+            variant: "error"
+          });
+        }
+      );
+  }
 
   return (
     <>
       <h1 className="title">Como podemos te ajudar?</h1>
       <div className="contact-section">
         <div className="form-container">
-          <form noValidate autoComplete="off">
+          <form
+            ref={formRef}
+            noValidate
+            autoComplete="off"
+            onSubmit={sendEmail}
+          >
             <TextField
               fullWidth
               margin="normal"
               label="Nome"
               variant="outlined"
+              name="name"
             />
             <TextField
               fullWidth
               margin="normal"
               label="Email"
               variant="outlined"
+              name="from-email"
             />
             <TextField
               fullWidth
               margin="normal"
               label="Assunto"
               variant="outlined"
+              name="subject"
             />
             <TextField
               fullWidth
               margin="normal"
               label="Mensagem"
               variant="outlined"
+              name="message"
               multiline
               rows={4}
             />
@@ -44,8 +97,13 @@ function ContactForm() {
               color="primary"
               type="submit"
               style={{ marginTop: "16px" }}
+              disabled={loading}
             >
-              Enviar
+              {loading ? (
+                <CircularProgress size={24} color="inherit" />
+              ) : (
+                "Enviar"
+              )}
             </Button>
           </form>
         </div>
@@ -73,9 +131,9 @@ function ContactForm() {
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faWhatsapp} />
-                &nbsp; (15) 99812-2314
+                &nbsp; (15) 99775-5599
               </a>
-              <a href="tel:+5515998122314" className="call-btn">
+              <a href="tel:+551533268128" className="call-btn">
                 <FontAwesomeIcon icon={faPhone} size="1x" />
                 &nbsp; Ligar
               </a>
