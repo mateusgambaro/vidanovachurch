@@ -1,5 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
-import "./TripStyles.css";
+import "./ServiceStyles.css";
 
 function ServicesData(props) {
   return (
@@ -7,8 +7,11 @@ function ServicesData(props) {
       <div className="s-image">
         <img src={props.image} alt="service" />
       </div>
-      <h4>{props.heading}</h4>
-      <p>{props.text}</p>
+      <div className="texts">
+      <h4 style={{textAlign: 'center'}}>{props.heading}</h4>
+        <p style={{marginBottom: '10px', textIndent: '8px'}}>{props.text}</p>
+        <p style={{textIndent: '5px'}}>{props.secondText}</p>
+      </div>
       <a className={props.btnClass} href={props.url}>
         <FaWhatsapp className="whatsapp-icon" /> {props.buttonText}
       </a>

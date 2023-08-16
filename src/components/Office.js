@@ -1,14 +1,14 @@
 import "./OfficeDataStyles.css";
 import OfficeData from "./OfficeData";
-import entradalogo from "../assets/entradalogo.jpg";
-import entrada_esc from "../assets/entrada_esc.jpg";
-import salaespera from "../assets/salaespera.jpg";
-import escritorio1 from "../assets/escritorio1.jpg";
+import entradalogo from "../assets/entradalogo.webp";
+import entrada_esc from "../assets/entrada_esc.webp";
+import salaespera from "../assets/salaespera.webp";
+import escritorio1 from "../assets/escritorio1.webp";
 import cafe_esc from "../assets/cafe_esc.jpg";
-import escritorio3 from "../assets/escritorio3.jpg";
-import escritorio4 from "../assets/escritorio4.jpg";
-import salareuniao from "../assets/salareuniao.jpg";
-import reuniao2_esc from "../assets/reuniao2_esc.jpg";
+import escritorio3 from "../assets/escritorio3.webp";
+import escritorio4 from "../assets/escritorio4.webp";
+import salareuniao from "../assets/salareuniao.webp";
+import reuniao2_esc from "../assets/reuniao2_esc.webp";
 
 function Office() {
   const images = [

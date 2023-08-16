@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar";
 import HomeHero from "../components/HomeHero";
 import Footer from "../components/Footer";
 import Trip from "src/components/Trip";
-import meninas from "../assets/diassola.jpg";
-import logoentrada from "../assets/entradalogo.jpg";
+import meninas from "../assets/diassola.webp";
+import logoentrada from "../assets/entradalogo.webp";
 import { contactMessages } from "src/messages/contact";
 
 function Home() {

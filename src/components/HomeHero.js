@@ -32,6 +32,7 @@ function HomeHero(props) {
         src={props.coverImg}
         alt="Background Cover"
         className="background-image"
+        loading="lazy" 
       />
       <div className={props.cName}>
         <div className="hero-content">
@@ -48,7 +49,7 @@ function HomeHero(props) {
             </a>
           </div>
           <div className="hero-image-container">
-            <img src={props.heroImg} alt="heroImg" className="heroImg" />
+            <img src={props.heroImg} alt="heroImg" className="heroImg" loading="lazy" />
           </div>
         </div>
       </div>

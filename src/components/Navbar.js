@@ -18,6 +18,7 @@ class Navbar extends Component {
             src={IconLogoWhite}
             alt="logo-white"
             className="navbar-logo-img"
+            loading="lazy" 
           />
           <div className="title-container">
             <h1 className="navbar-logo">Dias & Sola</h1>

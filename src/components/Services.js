@@ -1,10 +1,10 @@
 import "./ServiceStyles.css";
-import handShake from "../assets/hand-shake.png";
-import contract from "../assets/contract.png";
-import auction from "../assets/auction.png";
-import scalesOfJustice from "../assets/scales-of-justice.png";
-import growth from "../assets/growth.png";
-import portfolio from "../assets/portfolio.png";
+import handShake from "../assets/hand-shake.svg";
+import contract from "../assets/contract.svg";
+import auction from "../assets/auction.svg";
+import scalesOfJustice from "../assets/scales-of-justice.svg";
+import growth from "../assets/growth.svg";
+import portfolio from "../assets/portfolio.svg";
 import ServicesData from "./ServicesData";
 import { serviceMessages } from "src/messages/services";
 
@@ -21,48 +21,52 @@ function Services() {
       <div className="servicecard">
         <ServicesData
           image={contract}
-          heading="Aposentadoria"
-          text="Organizamos e preparamos sua pré-aposentadoria, com objetivo de auxiliar na sua busca por uma aposentadoria rápida e com o melhor benefício possível"
+          heading="Planejamento Previdenciário"
+          text="Estudo detalhado do histórico previdenciário, com análise de pendências no Cadastro Nacional de Informações Sociais (CNIS), hipóteses de aposentadoria e simulações de contribuições futuras."
+          secondText="O Planejamento Previdenciário permite identificar o melhor momento para requerer a aposentadoria e qual estratégia seguir para receber o benefício de maior valor. "
           btnClass="show"
-          buttonText="Quero me aposentar"
+          buttonText="Realizar planejamento"
           url={retirement}
         />
         <ServicesData
           image={handShake}
-          heading="Consulta Previdenciária"
-          text="Serviço voltado para você que precisa conhecer o seu caso ou descobrir uma solução especializada para seu problema. Realizamos esse atendimento em todo Brasil e exterior."
+          heading="Aposentadorias e Benefícios Previdenciários"
+          text="Requerimento e acompanhamento individualizado do benefício, junto ao sistema exclusivo para advogados (Meu INSS Digital)."
           btnClass="show"
-          buttonText="Consultar previdência"
+          buttonText="Realizar o requerimento"
           url={foresight}
         />
         <ServicesData
           image={auction}
-          heading="Processo Judicial"
-          text="Realizamos todo seu processo, desde cálculos, processo administrativo, judicial, até o imposto de renda. Este é um serviço para você que não quer se incomodar com nada."
+          heading="Benefícios por Incapacidade"
+          text="Benefício para quem se encontra incapacitado de forma temporária ou permanente para o trabalho. "
+          secondText="Análise de documentação médica aliada ao requerimento do benefício e agendamento de perícias."
           btnClass="show"
-          buttonText="Processar alguém"
+          buttonText="Possuo o benefício?"
           url={processMessage}
         />
         <ServicesData
           image={scalesOfJustice}
-          heading="Diagnóstico de Revisões"
-          text="Analisamos o seu caso, cálculos e o processo do benefício concedido no INSS, para então conseguirmos identificar o que precisa ser revisado e quanto o seu benefício pode aumentar."
+          heading="Revisão de Benefícios"
+          text="Analisamos o seu processo previdenciário (administrativo ou judicial) para identificar se possui direito de revisão e aumentar o benefício."
           btnClass="show"
           buttonText="Realizar revisão"
           url={diagnostic}
         />
         <ServicesData
           image={growth}
-          heading="Revisão da Vida Toda - A revisão dos seus direitos"
-          text="Análise completa em benefícios que sofreram mudanças de moedas antes do plano real. Este serviço descobre se a Revisão da Vida Toda é vantajosa para você."
+          heading="Revisão da Vida Toda"
+          text="A Revisão da Vida toda é devida para aqueles que tiveram contribuições anteriores à julho de 1994 e que se aposentaram antes da reforma da previdência."
+          secondText="Neste caso, realiza-se um estudo para identificar se aplicação da Revisão da Vida Toda aumentará a renda mensal do seu benefício previdenciário."
           btnClass="show"
-          buttonText="O que é vida?"
+          buttonText="Tenho direito?"
           url={lifeReview}
         />
         <ServicesData
           image={portfolio}
-          heading="Peças Administrativas"
-          text="Analisamos o seu caso e realizamos uma peça administrativa exclusiva para você, ela é um documento guia para o INSS no momento da análise do seu pedido."
+          heading="Benefício Assistencial"
+          text="Benefício de um salário-mínimo devido à pessoa com deficiência e ao idoso com 65 anos ou mais, que comprovem não possuir condições de prover o próprio sustento."
+          secondText="Requerimento, análise e agendamento de perícias medicas e avaliações sociais pelo sistema exclusivo do advogado (Meu INSS digital)."
           btnClass="show"
           buttonText="Analisar"
           url={administrationPieces}

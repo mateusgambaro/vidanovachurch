@@ -33,8 +33,8 @@ class DestinationData extends Component {
         </div>
 
         <div className="image">
-          <img src={this.props.img1} alt="img" />
-          <img src={this.props.img2} alt="img" />
+          <img src={this.props.img1} alt="img" loading="lazy" />
+          <img src={this.props.img2} alt="img" loading="lazy"  />
         </div>
       </div>
     );

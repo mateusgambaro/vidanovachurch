@@ -1,46 +1,50 @@
 import "./TripStyles.css";
 import TripData from "./TripData";
-import handShake from "../assets/hand-shake.png";
-import contract from "../assets/contract.png";
-import auction from "../assets/auction.png";
+import handShake from "../assets/hand-shake.svg";
+import contract from "../assets/contract.svg";
+import auction from "../assets/auction.svg";
 import { serviceMessages } from "src/messages/services";
 
 function Trip() {
-  const retirement = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.retirement}`
-  const foresight = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.foresight}`
-  const processMessage = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.process}`
+  const retirement = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.retirement}`;
+  const foresight = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.foresight}`;
+  const processMessage = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.process}`;
 
   return (
     <div className="trip">
       <h1 style={{ marginBottom: "10px" }}>Serviços</h1>
       <p>Como podemos te ajudar?</p>
-      <div className="tripcard">
+      <div className="tripcard" style={{marginBottom: '40px'}}>
         <TripData
           image={contract}
-          heading="Aposentadoria"
-          text="Organizamos e preparamos sua pré-aposentadoria, com objetivo de auxiliar na sua busca por uma aposentadoria rápida e com o melhor benefício possível"
+          heading="Planejamento Previdenciário"
+          text="Estudo detalhado do histórico previdenciário, com análise de pendências no Cadastro Nacional de Informações Sociais (CNIS), hipóteses de aposentadoria e simulações de contribuições futuras."
+          secondText="O Planejamento Previdenciário permite identificar o melhor momento para requerer a aposentadoria e qual estratégia seguir para receber o benefício de maior valor. "
           btnClass="show"
-          buttonText="Quero me aposentar"
+          buttonText="Realizar planejamento"
           url={retirement}
         />
         <TripData
           image={handShake}
-          heading="Consulta Previdenciária"
-          text="Serviço voltado para você que precisa conhecer o seu caso ou descobrir uma solução especializada para seu problema. Realizamos esse atendimento em todo Brasil e exterior."
+          heading="Aposentadorias e Benefícios Previdenciários"
+          text="Requerimento e acompanhamento individualizado do benefício, junto ao sistema exclusivo para advogados (Meu INSS Digital)."
           btnClass="show"
-          buttonText="Consultar previdência"
+          buttonText="Realizar o requerimento"
           url={foresight}
         />
         <TripData
           image={auction}
-          heading="Processo Judicial          "
-          text="Realizamos todo seu processo, desde cálculos, processo administrativo, judicial, até o imposto de renda. Este é um serviço para você que não quer se incomodar com nada."
+          heading="Benefícios por Incapacidade"
+          text="Benefício para quem se encontra incapacitado de forma temporária ou permanente para o trabalho. "
+          secondText="Análise de documentação médica aliada ao requerimento do benefício e agendamento de perícias."
           btnClass="show"
-          buttonText="Processar alguém"
+          buttonText="Possuo o benefício?"
           url={processMessage}
         />
       </div>
-      <a href='/service' className="looking-link">Procurando mais?</a>
+      <a href="/service" className="looking-link">
+        Procurando mais?
+      </a>
     </div>
   );
 }

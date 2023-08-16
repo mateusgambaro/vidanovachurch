@@ -11,6 +11,7 @@ import { useSnackbar } from "notistack";
 function ContactForm() {
   const { enqueueSnackbar } = useSnackbar();
   const [loading, setLoading] = useState(false);
+  const [phone, setPhone] = useState("");
   const formRef = useRef(null);
   const isMounted = useRef(true);
 
@@ -28,10 +29,10 @@ function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_5qoe89c",
-        "template_zk0u7fi",
+        "service_k170obf",
+        "template_g57nnkn",
         e.target,
-        "U8tQrYy3ZXpYwPrbP"
+        "uy6ZsklODDwt31mBq"
       )
       .then(
         (result) => {
@@ -50,6 +51,22 @@ function ContactForm() {
         }
       );
   }
+
+  const handlePhoneChange = (e) => {
+    let value = e.target.value;
+
+    value = value.replace(/\D/g, "");
+
+    if (value.length > 2) {
+      value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+    }
+
+    if (value.length > 10) {
+      value = `${value.slice(0, 10)}-${value.slice(10, 14)}`;
+    }
+
+    setPhone(value);
+  };
 
   return (
     <>
@@ -74,8 +91,18 @@ function ContactForm() {
               margin="normal"
               label="Email"
               variant="outlined"
-              name="from-email"
+              name="reply_to"
             />
+            <TextField
+              fullWidth
+              margin="normal"
+              label="Telefone"
+              variant="outlined"
+              name="phone"
+              value={phone}
+              onChange={handlePhoneChange}
+            />
+
             <TextField
               fullWidth
               margin="normal"

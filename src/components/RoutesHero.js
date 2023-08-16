@@ -4,7 +4,7 @@ function RoutesHero(props) {
   return (
     <>
       <div className={props.cName}>
-        <img src={props.routeImg} alt="routeImg" className="routeImg" />
+        <img src={props.routeImg} alt="routeImg" className="routeImg" loading="lazy" />
         <div className="route-text">
           <h1>{props.title}</h1>
           <p>{props.text}</p>
