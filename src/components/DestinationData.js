@@ -3,6 +3,8 @@ import "./DestinationStyles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 class DestinationData extends Component {
   render() {
@@ -31,10 +33,9 @@ class DestinationData extends Component {
             </a>
           </div>
         </div>
-
         <div className="image">
-          <img src={this.props.img1} alt="img" loading="lazy" />
-          <img src={this.props.img2} alt="img" loading="lazy"  />
+          <LazyLoadImage className="picture-1" src={this.props.img1} alt="Image Alt" effect="blur" />
+          <LazyLoadImage className="picture-2" src={this.props.img2} alt="Image Alt" effect="blur" />
         </div>
       </div>
     );
