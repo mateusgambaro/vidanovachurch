@@ -129,6 +129,10 @@
     height: 250px;
   }
 
+  .picture-2 {
+    margin-left: 10px;
+  }
+
   .highlighted-box {
     padding: 40px;
   }
