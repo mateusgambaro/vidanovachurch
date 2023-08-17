@@ -5,6 +5,10 @@ import auction from "../assets/auction.svg";
 import scalesOfJustice from "../assets/scales-of-justice.svg";
 import growth from "../assets/growth.svg";
 import portfolio from "../assets/portfolio.svg";
+import publicserver from "../assets/publicserver.svg";
+import processauction from "../assets/processauction.svg";
+import loan from "../assets/loan.svg";
+import lion from "../assets/lion.svg";
 import ServicesData from "./ServicesData";
 import { serviceMessages } from "src/messages/services";
 
@@ -12,9 +16,13 @@ function Services() {
   const retirement = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.retirement}`;
   const foresight = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.foresight}`;
   const processMessage = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.process}`;
-  const diagnostic = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.diagnostic}`;
+  const illBenefit = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.illBenefit}`;
   const lifeReview = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.lifeReview}`;
-  const administrationPieces = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.administrationPieces}`;
+  const benefitsReview = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.benefitsReview}`;
+  const assistanceBenefitsReview = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.assistanceBenefitsReview}`;
+  const foresightPublicPlanning = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.foresightPublicPlanning}`;
+  const loanReview = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.loanReview}`;
+  const IRMessage = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.IRMessage}`;
 
   return (
     <div className="service">
@@ -26,15 +34,16 @@ function Services() {
           secondText="O Planejamento Previdenciário permite identificar o melhor momento para requerer a aposentadoria e qual estratégia seguir para receber o benefício de maior valor. "
           btnClass="show"
           buttonText="Realizar planejamento"
-          url={retirement}
+          url={foresight}
         />
         <ServicesData
           image={handShake}
           heading="Aposentadorias e Benefícios Previdenciários"
-          text="Requerimento e acompanhamento individualizado do benefício, junto ao sistema exclusivo para advogados (Meu INSS Digital)."
+          text="Análise, organização e solicitação de documentos, petição administrativa, requerimento e acompanhamento individualizado do processo, junto ao sistema exclusivo para advogados (Meu INSS Digital)."
+          secondText="Também é indicado para quem já requereu o pedido junto ao INSS, mas deseja contar com uma assistência jurídica especializada."
           btnClass="show"
-          buttonText="Realizar o requerimento"
-          url={foresight}
+          buttonText="Quero me aposentar"
+          url={retirement}
         />
         <ServicesData
           image={auction}
@@ -42,16 +51,16 @@ function Services() {
           text="Benefício para quem se encontra incapacitado de forma temporária ou permanente para o trabalho. "
           secondText="Análise de documentação médica aliada ao requerimento do benefício e agendamento de perícias."
           btnClass="show"
-          buttonText="Possuo o benefício?"
-          url={processMessage}
+          buttonText="Tenho direito ao benefício?"
+          url={illBenefit}
         />
         <ServicesData
           image={scalesOfJustice}
           heading="Revisão de Benefícios"
-          text="Analisamos o seu processo previdenciário (administrativo ou judicial) para identificar se possui direito de revisão e aumentar o benefício."
+          text="Análise do seu processo administrativo (INSS) ou judicial para identificar a possibilidade de revisão do benefício para aumentar a renda mensal."
           btnClass="show"
           buttonText="Realizar revisão"
-          url={diagnostic}
+          url={benefitsReview}
         />
         <ServicesData
           image={growth}
@@ -68,8 +77,42 @@ function Services() {
           text="Benefício de um salário-mínimo devido à pessoa com deficiência e ao idoso com 65 anos ou mais, que comprovem não possuir condições de prover o próprio sustento."
           secondText="Requerimento, análise e agendamento de perícias medicas e avaliações sociais pelo sistema exclusivo do advogado (Meu INSS digital)."
           btnClass="show"
-          buttonText="Analisar"
-          url={administrationPieces}
+          buttonText="Tenho direito ao benefício?"
+          url={assistanceBenefitsReview}
+        />
+        <ServicesData
+          image={publicserver}
+          heading="Planejamento Previdenciário do Servidor Público"
+          text="Estudo detalhado do tempo de serviço do servidor para analisar as hipóteses de aposentadoria, aproveitando ou não o tempo de contribuição do Regime Geral caso possua e qual estratégia seguir para receber a aposentadoria de maior valor. "
+          btnClass="show"
+          buttonText="Realizar planejamento"
+          url={foresightPublicPlanning}
+        />
+        <ServicesData
+          image={processauction}
+          heading="Processo Judicial"
+          text="Ação para buscar o direito que foi indeferido na via administrativa."
+          secondText="Acompanhamento individualizado do processo do início ao fim da ação."
+          btnClass="show"
+          buttonText="Iniciar uma ação judicial"
+          url={processMessage}
+        />
+         <ServicesData
+          image={loan}
+          heading="Revisão de Empréstimo Consignado"
+          text="Ação que busca reaver valores de empréstimos consignados contratados indevidamente."
+          btnClass="show"
+          buttonText="Realizar revisão"
+          url={loanReview}
+        />
+        <ServicesData
+          image={lion}
+          heading="Isenção de Imposto de Renda"
+          text="Em alguns casos específicos é possível solicitar a isenção do imposto de renda no benefício ou aposentadoria."
+          secondText=" Em caso de negativa, é possível ingressar com ação para buscar a isenção com o ressarcimento desses pagamentos desde o início da doença."
+          btnClass="show"
+          buttonText="Tenho direito a isenção?"
+          url={IRMessage}
         />
       </div>
       <div className="office">

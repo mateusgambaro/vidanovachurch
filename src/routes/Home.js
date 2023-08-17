@@ -15,7 +15,8 @@ function Home() {
         cName="hero"
         heroImg={meninas}
         coverImg={logoentrada}
-        title="Cuidamos da sua Aposentadoria do início ao fim"
+        title="Tranquilidade para o seu futuro"
+        subtitle="Advogados especialistas em aposentadorias e benefícios previdenciários."
         text="Atendimento para"
         btnClass="show"
         buttonText="Entre em contato"

@@ -9,8 +9,8 @@ function ServicesData(props) {
       </div>
       <div className="texts">
       <h4 style={{textAlign: 'center'}}>{props.heading}</h4>
-        <p style={{marginBottom: '10px', textIndent: '8px'}}>{props.text}</p>
-        <p style={{textIndent: '5px'}}>{props.secondText}</p>
+        <p style={{marginBottom: '10px'}}>{props.text}</p>
+        <p>{props.secondText}</p>
       </div>
       <a className={props.btnClass} href={props.url}>
         <FaWhatsapp className="whatsapp-icon" /> {props.buttonText}

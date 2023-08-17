@@ -155,10 +155,11 @@ function ContactForm() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe> */}
           <div className="address-details">
-            <p>
+            <p style={{marginBottom: '10px'}}>
               R. Belmira Loureiro de Almeida, 526 - 32, Jardim Piratininga,
               Sorocaba - SP
             </p>
+            <p>Av. Raul Leite Magalhães, 430, Centro, Tapiraí - SP</p>
             <div className="contact-buttons">
               <a
                 href={whatsAppAPI}

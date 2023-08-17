@@ -32,9 +32,13 @@ const Footer = () => {
         <div className="bottom">
           <div>
             <h4>Endereço</h4>
-            <p>
+            <p style={{marginBottom: '10px'}}>
               R. Belmira Loureiro de Almeida, 526 - 32, Jardim Piratininga,
               Sorocaba - SP
+            </p>
+            <p>
+              Av. Raul Leite Magalhães, 430, Centro,
+              Tapiraí - SP
             </p>
             <br />
             <p>(15) 99775-5599 - (15) 3326-8128</p>

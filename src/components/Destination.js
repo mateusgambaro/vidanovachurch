@@ -8,6 +8,8 @@ import gabriela_2 from "../assets/gabriela_2.webp";
 import DestinationData from "./DestinationData";
 
 const Destination = () => {
+  const wppNumber = `+55${process.env.REACT_APP_PHONE_NUMBER}`;
+  const email = "dias.sola.adv@gmail.com";
   return (
     <>
       <div className="destination">
@@ -25,8 +27,8 @@ const Destination = () => {
           img1={gabriella_1}
           img2={gabriella_2}
           linkedinUrl="https://www.linkedin.com/in/gabriella-dias-6a2940181"
-          emailUrl="gabriella.dias@email.com"
-          whatsappNumber="+5515996166186"
+          emailUrl={email}
+          whatsappNumber={wppNumber}
         />
         <DestinationData
           className="first-des-reverse"
@@ -37,8 +39,8 @@ const Destination = () => {
           img1={larissa_1}
           img2={larissa_2}
           linkedinUrl="https://www.linkedin.com/in/larissa-sola-97581b176/"
-          emailUrl="gabriella.dias@email.com"
-          whatsappNumber="+5515998122314"
+          emailUrl={email}
+          whatsappNumber={wppNumber}
         />
         <DestinationData
           className="first-des"
@@ -49,8 +51,8 @@ const Destination = () => {
           img1={gabriela_1}
           img2={gabriela_2}
           linkedinUrl="https://www.linkedin.com/in/gabriela-cassillo-690655186"
-          emailUrl="gabriella.dias@email.com"
-          whatsappNumber="5511999999999"
+          emailUrl={email}
+          whatsappNumber={wppNumber}
         />
       </div>
     </>

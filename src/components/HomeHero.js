@@ -10,10 +10,9 @@ function HomeHero(props) {
   React.useEffect(() => {
     const options = {
       strings: [
+        "<strong>Planejamento Previdenciário</strong>",
         "<strong>Aposentadoria</strong>",
-        "<strong>INSS</strong>",
-        "<strong>Previdência</strong>",
-        "<strong>Processo judicial</strong>"
+        "<strong>Beneficio Assistencial</strong>",
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -38,6 +37,7 @@ function HomeHero(props) {
         <div className="hero-content">
           <div className="hero-text">
             <h1>{props.title}</h1>
+            <h2>{props.subtitle}</h2>
             <div className="typed-title-container">
               <span className="static-text">{props.text}</span>
               <div style={{display: 'flex', justifyContent: 'center'}}>
