@@ -9,11 +9,7 @@ const Footer = () => {
       <div className="footer">
         <div className="top">
           <div className="logo">
-            <img
-              src={icone_white}
-              alt="icone_logo"
-              className="logo-image"
-            />
+            <img src={icone_white} alt="icone_logo" className="logo-image" />
             <div>
               <h1>Dias & Sola</h1>
               <p>ADVOGADAS ASSOCIADAS</p>
@@ -32,13 +28,13 @@ const Footer = () => {
         <div className="bottom">
           <div>
             <h4>Endereço</h4>
-            <p style={{marginBottom: '10px'}}>
-              R. Belmira Loureiro de Almeida, 526 - 32, Jardim Piratininga,
-              Sorocaba - SP
+            <p style={{ marginBottom: "10px" }}>
+              <strong>Unidade Sorocaba</strong> - R. Belmira Loureiro de
+              Almeida, 526 - 32, Jardim Piratininga, Sorocaba - SP
             </p>
             <p>
-              Av. Raul Leite Magalhães, 430, Centro,
-              Tapiraí - SP
+              <strong>Unidade Tapiraí</strong> - Av. Raul Leite Magalhães, 430,
+              Centro, Tapiraí - SP
             </p>
             <br />
             <p>(15) 99775-5599 - (15) 3326-8128</p>

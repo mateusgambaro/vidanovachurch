@@ -155,10 +155,12 @@ function ContactForm() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe> */}
           <div className="address-details">
-            <p style={{marginBottom: '10px'}}>
+            <strong>Unidade Sorocaba</strong>
+            <p style={{ marginBottom: "10px" }}>
               R. Belmira Loureiro de Almeida, 526 - 32, Jardim Piratininga,
               Sorocaba - SP
             </p>
+            <strong>Unidade Tapiraí</strong>
             <p>Av. Raul Leite Magalhães, 430, Centro, Tapiraí - SP</p>
             <div className="contact-buttons">
               <a
