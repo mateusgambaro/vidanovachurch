@@ -1,5 +1,9 @@
 .office {
     margin: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #2a2a2a;
   }
   
@@ -9,12 +13,10 @@
   }
   
   .officecard {
+    display: flex;
+    justify-content: center;
     margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    max-width: 800px;
   }
   
   .o-card {
@@ -52,8 +54,10 @@
   hr.rounded {
     border-top: 1px solid #bebebe;
     border-radius: 5px;
+    width: 80%;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
-    margin: 50px 0;
+    margin: auto;
+    margin-top: 80px;
   }
   
   @media screen and (max-width: 850px) {
@@ -61,10 +65,12 @@
       margin: 4rem 2rem;
     }
     .officecard {
-      margin-top: 3rem;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      margin-top: 1rem;
+      min-width: 400px;
     }
+  
     .o-card {
       margin-bottom: 1.5rem;
       width: 100%;

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import "./ServiceStyles.css";
 import handShake from "../assets/hand-shake.svg";
 import contract from "../assets/contract.svg";
@@ -11,6 +12,9 @@ import loan from "../assets/loan.svg";
 import lion from "../assets/lion.svg";
 import ServicesData from "./ServicesData";
 import { serviceMessages } from "src/messages/services";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import workGraph from '../assets/workgraph.png'
+import workGraphMobile from '../assets/workgraphmobile.png'
 
 function Services() {
   const retirement = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.retirement}`;
@@ -24,6 +28,28 @@ function Services() {
   const loanReview = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.loanReview}`;
   const IRMessage = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.IRMessage}`;
 
+  const [currentImage, setCurrentImage] = useState(workGraph);
+
+  useEffect(() => {
+    const setImage = () => {
+      if (window.innerWidth <= 600) {
+        setCurrentImage(workGraphMobile);
+      } else {
+        setCurrentImage(workGraph);
+      }
+    };
+
+    // Initial set
+    setImage();
+
+    // Add an event listener to handle window resize
+    window.addEventListener('resize', setImage);
+
+    // Cleanup the listener when the component is unmounted
+    return () => {
+      window.removeEventListener('resize', setImage);
+    };
+  }, []);
   return (
     <div className="service">
       <div className="servicecard">
@@ -115,14 +141,12 @@ function Services() {
           url={IRMessage}
         />
       </div>
-      <div className="office">
         <hr class="rounded" />
+      <div className="office">
         <h1 style={{ marginBottom: "10px" }}>Como trabalhamos</h1>
         <p>Nosso time é composto por pessoas excelentes e dedicadas.</p>
         <div className="officecard">
-          {/* {images.map((img, index) => (
-            <OfficeData image={img} key={index} />
-          ))} */}
+        <LazyLoadImage src={currentImage} alt="Image Alt" effect="blur" />
         </div>
       </div>
     </div>
