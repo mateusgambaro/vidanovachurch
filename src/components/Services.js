@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "./ServiceStyles.css";
 import handShake from "../assets/hand-shake.svg";
 import contract from "../assets/contract.svg";
@@ -13,8 +13,8 @@ import lion from "../assets/lion.svg";
 import ServicesData from "./ServicesData";
 import { serviceMessages } from "src/messages/services";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import workGraph from '../assets/workgraph.png'
-import workGraphMobile from '../assets/workgraphmobile.png'
+import workGraph from "../assets/workgraph.png";
+import workGraphMobile from "../assets/workgraphmobile.png";
 
 function Services() {
   const retirement = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.retirement}`;
@@ -43,11 +43,11 @@ function Services() {
     setImage();
 
     // Add an event listener to handle window resize
-    window.addEventListener('resize', setImage);
+    window.addEventListener("resize", setImage);
 
     // Cleanup the listener when the component is unmounted
     return () => {
-      window.removeEventListener('resize', setImage);
+      window.removeEventListener("resize", setImage);
     };
   }, []);
   return (
@@ -123,7 +123,7 @@ function Services() {
           buttonText="Iniciar uma ação judicial"
           url={processMessage}
         />
-         <ServicesData
+        <ServicesData
           image={loan}
           heading="Revisão de Empréstimo Consignado"
           text="Ação que busca reaver valores de empréstimos consignados contratados indevidamente."
@@ -141,12 +141,14 @@ function Services() {
           url={IRMessage}
         />
       </div>
-        <hr class="rounded" />
+      <hr class="rounded" />
       <div className="workDiv">
-        <h1 style={{ marginBottom: "10px" }}>Como trabalhamos</h1>
-        <p>Nosso time é composto por pessoas excelentes e dedicadas.</p>
+        <div className="textWork">
+          <h1 style={{ marginBottom: "10px" }}>Como trabalhamos</h1>
+          <p>Nosso time é composto por pessoas excelentes e dedicadas.</p>
+        </div>
         <div className="workCard">
-        <LazyLoadImage src={currentImage} alt="Image Alt" effect="blur" />
+          <LazyLoadImage src={currentImage} alt="Image Alt" effect="blur" />
         </div>
       </div>
     </div>
