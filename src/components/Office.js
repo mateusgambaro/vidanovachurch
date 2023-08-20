@@ -25,7 +25,7 @@ function Office() {
   return (
     <div className="office">
       <hr class="rounded" />
-      <h1 style={{ marginBottom: "10px" }}>Escritório</h1>
+      <h1 style={{ marginBottom: "10px", marginTop: '50px' }}>Escritório</h1>
       <p>Conheça nosso espaço.</p>
       <div className="officecard">
         {images.map((img, index) => (

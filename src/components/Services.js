@@ -142,10 +142,10 @@ function Services() {
         />
       </div>
         <hr class="rounded" />
-      <div className="office">
+      <div className="workDiv">
         <h1 style={{ marginBottom: "10px" }}>Como trabalhamos</h1>
         <p>Nosso time é composto por pessoas excelentes e dedicadas.</p>
-        <div className="officecard">
+        <div className="workCard">
         <LazyLoadImage src={currentImage} alt="Image Alt" effect="blur" />
         </div>
       </div>

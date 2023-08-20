@@ -1,9 +1,5 @@
 .office {
     margin: 4rem 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: #2a2a2a;
   }
   
@@ -13,10 +9,12 @@
   }
   
   .officecard {
-    display: flex;
-    justify-content: center;
     margin-top: 3rem;
-    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
   
   .o-card {
@@ -65,12 +63,10 @@
       margin: 4rem 2rem;
     }
     .officecard {
+      margin-top: 3rem;
       display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-      min-width: 400px;
+      flex-direction: column;
     }
-  
     .o-card {
       margin-bottom: 1.5rem;
       width: 100%;
