@@ -150,6 +150,14 @@ button:hover {
     z-index: -1;
   }
 
+  .navbar-logo {
+    color: #ffcb99;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 0 !important;
+  }
+
   .nav-links {
     display: block;
     width: 100%;
