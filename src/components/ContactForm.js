@@ -157,7 +157,7 @@ function ContactForm() {
           <div className="address-details">
             <strong>Unidade Sorocaba</strong>
             <p style={{ marginBottom: "10px" }}>
-              R. Belmira Loureiro de Almeida, 526 - 32, Jardim Piratininga,
+              R. Belmira Loureiro de Almeida, 525 - Sala 32, Jardim Piratininga,
               Sorocaba - SP
             </p>
             <strong>Unidade Tapiraí</strong>

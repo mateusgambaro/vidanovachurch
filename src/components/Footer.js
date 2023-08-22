@@ -30,7 +30,7 @@ const Footer = () => {
             <h4>Endereço</h4>
             <p style={{ marginBottom: "10px" }}>
               <strong>Unidade Sorocaba</strong> - R. Belmira Loureiro de
-              Almeida, 526 - 32, Jardim Piratininga, Sorocaba - SP
+              Almeida, 525 - Sala 32, Jardim Piratininga, Sorocaba - SP
             </p>
             <p>
               <strong>Unidade Tapiraí</strong> - Av. Raul Leite Magalhães, 430,

@@ -7,11 +7,13 @@ import Contact from "./routes/Contact";
 import { SnackbarProvider } from "notistack";
 
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <SnackbarProvider maxSnack={3}>
       <div className="App">
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

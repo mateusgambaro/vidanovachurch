@@ -46,7 +46,7 @@
   font-size: 4rem;
   margin-bottom: 10px;
   font-weight: 800;
-  text-align: left;
+  text-align: center;
   background: #ffeddd;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,7 +55,7 @@
 .hero-text h2 {
   font-size: 2rem;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   background: #ffeddd;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

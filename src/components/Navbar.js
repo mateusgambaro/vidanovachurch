@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 import "./NavbarStyles.css";
 import IconLogoWhite from "../assets/icone_logo_white.png";
@@ -11,6 +11,7 @@ class Navbar extends Component {
   };
 
   render() {
+    const isDesktop = window.innerWidth > 850;
     return (
       <nav className="NavbarItems">
         <div className="logo-container">
@@ -18,7 +19,7 @@ class Navbar extends Component {
             src={IconLogoWhite}
             alt="logo-white"
             className="navbar-logo-img"
-            loading="lazy" 
+            loading="lazy"
           />
           <div className="title-container">
             <h1 className="navbar-logo">Dias & Sola</h1>
@@ -35,10 +36,21 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link className={item.cName} to={item.url}>
+                <NavLink
+                  to={item.url}
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? isDesktop
+                        ? "active"
+                        : "nav-links"
+                      : "nav-links"
+                  }
+                >
                   <i className={item.icon}></i>
                   {item.title}
-                </Link>
+                </NavLink>
               </li>
             );
           })}

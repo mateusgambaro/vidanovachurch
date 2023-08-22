@@ -67,8 +67,23 @@
 .nav-links:hover {
   background-color: #ffcb99;
   color: #660000;
-  border-radius: 40px;
+  border-radius: 10px;
   transition: all 0.2s ease-in-out;
+}
+
+.active {
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #ffcb99;
+  color: #660000;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.active i {
+  padding-right: 10px;
 }
 
 button {
@@ -115,6 +130,18 @@ button:hover {
 }
 
 @media screen and (max-width: 850px) {
+
+  .active {
+    background: #ffcb99;
+    transition: none;
+    border-radius: 0;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #ffcb99;
+    color: #660000;
+}
+
   .NavbarItems {
     z-index: 99;
   }
@@ -157,19 +184,20 @@ button:hover {
     font-weight: 500;
     margin-left: 0 !important;
   }
-
+  
   .nav-links {
     display: block;
     width: 100%;
     font-size: 1.2rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   .nav-links:hover {
     background: #ffcb99;
     transition: none;
-  border-radius: 0;
+    border-radius: 0;
   }
+
 
   .menu-icons {
     display: block;
@@ -194,6 +222,7 @@ button:hover {
     letter-spacing: 2px;
     font-size: 1.2rem;
   }
+  
   .fa-times {
     color: #ffeddd;
   }

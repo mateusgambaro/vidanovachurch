@@ -15,7 +15,7 @@ function Home() {
         cName="hero"
         heroImg={meninas}
         coverImg={logoentrada}
-        title="Tranquilidade para o seu futuro"
+        title="Tranquilidade para o seu futuro!"
         subtitle="Advogados especialistas em aposentadorias e benefícios previdenciários."
         text="Atendimento para"
         btnClass="show"
