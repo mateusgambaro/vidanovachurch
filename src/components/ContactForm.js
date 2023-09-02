@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useRef, useState } from "react";
-import { CircularProgress } from "@mui/material";
 import emailjs from "emailjs-com";
 import { useSnackbar } from "notistack";
 import LazyIframe from "./LazyFrame";
@@ -71,9 +70,9 @@ function ContactForm() {
 
   return (
     <>
-      <h1 className="title">Como podemos te ajudar?</h1>
+      <h1 className="title">Conheça nosso espaço</h1>
       <div className="contact-section">
-        <div className="form-container">
+        {/* <div className="form-container">
           <form
             ref={formRef}
             noValidate
@@ -134,12 +133,12 @@ function ContactForm() {
               )}
             </Button>
           </form>
-        </div>
+        </div> */}
         <div className="map-container">
           ,
           <LazyIframe
             style={{ border: 0 }}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0374136228966!2d-47.43262182376192!3d-23.495161859165158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf6040811d745d%3A0x66921dbb598ee480!2sR.%20Belmira%20Loureiro%20de%20Almeida%2C%20526%20-%2032%20-%20Jardim%20Piratininga%2C%20Sorocaba%20-%20SP%2C%2018016-321!5e0!3m2!1sen!2sbr!4v1691544216213!5m2!1sen!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1823.129882982301!2d-46.31922758788184!3d-23.951252779186014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03a27453d28f%3A0xbd3912b6c01f0196!2sR.%20Dr.%20Manuel%20Tourinho%2C%20171%20-%20Macuco%2C%20Santos%20-%20SP%2C%2011015-030!5e0!3m2!1sen!2sbr!4v1693136845426!5m2!1sen!2sbr"
             width="600"
             height="450"
             allowfullscreen=""
@@ -155,13 +154,10 @@ function ContactForm() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe> */}
           <div className="address-details">
-            <strong>Unidade Sorocaba</strong>
+            <strong>Unidade Santos</strong>
             <p style={{ marginBottom: "10px" }}>
-              R. Belmira Loureiro de Almeida, 525 - Sala 32, Jardim Piratininga,
-              Sorocaba - SP
+            R. Doutor Manoel Tourinho, 171 - Macuco, Santos/SP
             </p>
-            <strong>Unidade Tapiraí</strong>
-            <p>Av. Raul Leite Magalhães, 430, Centro, Tapiraí - SP</p>
             <div className="contact-buttons">
               <a
                 href={whatsAppAPI}
@@ -171,9 +167,9 @@ function ContactForm() {
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faWhatsapp} />
-                &nbsp; (15) 99775-5599
+                &nbsp; (13) 99791-2709
               </a>
-              <a href="tel:+551533268128" className="call-btn">
+              <a href="tel:+5513997912709" className="call-btn">
                 <FontAwesomeIcon icon={faPhone} size="1x" />
                 &nbsp; Ligar
               </a>

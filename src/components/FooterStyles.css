@@ -1,6 +1,6 @@
 .footer {
-  background: #660000;
-  color: #ffcb99;
+  background: #2a2a2a;
+  color: whitesmoke;
   padding: 1rem 6rem;
 }
 
@@ -17,13 +17,13 @@
 }
 
 .top i {
-  color: #ffcb99;
+  color: white;
   font-size: 2rem;
   margin-left: 1rem;
 }
 
 .top i:hover {
-  color: #86b091 ;
+  color: #8010F6 ;
 }
 
 .bottom {
@@ -50,7 +50,8 @@
 }
 
 .logo-image {
-  width: 150px;
+  width: 100px;
+  margin-right: 20px;
 }
 
 .bottom a {

@@ -16,7 +16,7 @@
 
 .hero-text {
   flex: 1;
-  margin-top: 5%;
+  margin-top: 20%;
   padding-left: 6rem;
   padding-right: 3rem;
 }
@@ -47,7 +47,7 @@
   margin-bottom: 10px;
   font-weight: 800;
   text-align: center;
-  background: #ffeddd;
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -56,14 +56,15 @@
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
-  background: #ffeddd;
+  background: white;
+  margin-bottom: 10%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 
 .hero-text span {
-  color: #ffeddd;
+  color: white;
   font-size: 1.3rem;
   padding: 0.5rem 0 2rem 0;
 }
@@ -71,14 +72,14 @@
 
 .hero-text .show {
   text-decoration: none;
-  background: #9EC1A3;
+  background: #8010F6;
   padding: 1rem 2rem;
   border-radius: 6px;
   font-size: 1.1rem;
   font-weight: bold;
   vertical-align: middle;
   letter-spacing: 2px;
-  color: #ffeddd;
+  color: white;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* New shadow */
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* New transition */
   cursor: pointer;  /* Indicates clickable area */
@@ -86,7 +87,7 @@
 
 /* Hover effect for the button */
 .hero-text .show:hover {
-  background: #86b091; 
+  background: #8c5dbe; 
   transform: translateY(-3px);  /* Gives a subtle lift effect */
   box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12);  /* Increase shadow on hover for depth */
 }
@@ -94,7 +95,7 @@
 
 .show .whatsapp-icon {
   font-size: 1.2rem;
-  color: #ffeddd;
+  color: white;
   vertical-align: middle; 
   margin-right: 8px;    
 }
@@ -152,7 +153,7 @@
   }
 
   .hero-text span {
-    color: #ffeddd;
+    color: white;
     font-size: 1.3rem;
     padding: 0;
   }
@@ -194,6 +195,7 @@
   }
   
   .hero-text .show {
+    display: flex;
     padding: 0.6rem 1.1rem;
     border-radius: 3px;
     font-size: 1rem;

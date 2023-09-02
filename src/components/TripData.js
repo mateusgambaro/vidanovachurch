@@ -8,13 +8,15 @@ function TripData(props) {
         <img src={props.image} alt="trip" />
       </div>
       <div className="texts">
-      <h4 style={{textAlign: 'center'}}>{props.heading}</h4>
-        <p style={{marginBottom: '10px', textIndent: '8px'}}>{props.text}</p>
-        <p style={{textIndent: '5px'}}>{props.secondText}</p>
+        <h4 style={{ textAlign: "center" }}>{props.heading}</h4>
+        <p style={{ marginBottom: "10px", textIndent: "8px" }}>{props.text}</p>
+        <p style={{ textIndent: "5px" }}>{props.secondText}</p>
       </div>
-      <a className={props.btnClass} href={props.url}>
-        <FaWhatsapp className="whatsapp-icon" /> {props.buttonText}
-      </a>
+      {props.heading === "Vida Nova Business" && (
+        <a href="/service" className="looking-link">
+          Ver empresas parceiras
+        </a>
+      )}
     </div>
   );
 }

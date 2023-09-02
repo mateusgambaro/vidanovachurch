@@ -6,13 +6,13 @@ export const MenuItems = [
     icon: "fa-solid fa-house-user"
   },
   {
-    title: "Quem Somos",
+    title: "Departamentos",
     url: "/about",
     cName: "nav-links",
     icon: "fa-solid fa-circle-info"
   },
   {
-    title: "Serviços",
+    title: "Vida Nova Business",
     url: "/service",
     cName: "nav-links",
     icon: "fa-solid fa-briefcase"

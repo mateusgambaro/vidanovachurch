@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import RoutesHero from "../components/RoutesHero";
 import Footer from "../components/Footer";
-import servicos from "../assets/servicos.webp"
+import servicos from "../assets/church.jpeg"
 import Services from "src/components/Services";
 
 function Service() {
@@ -11,7 +11,7 @@ function Service() {
       <RoutesHero
         cName="route-mid"
         routeImg={servicos}
-        title="Serviços"
+        title="Potencialize o seu negócio"
         btnClass="hide"
       />
       <Services />

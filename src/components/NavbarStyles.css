@@ -1,7 +1,7 @@
 .NavbarItems {
   /* background-color: #222; */
-  background-color: #660000;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2a2a2a;
+  box-shadow: 1px 5px 15px 1px rgba(114, 85, 247, 0.3);
   width: 95%;
   height: 80px;
   border-radius: 13px;
@@ -17,7 +17,7 @@
 }
 
 .navbar-logo {
-  color: #ffcb99;
+  color: whitesmoke;
   font-size: 2rem;
   cursor: pointer;
   font-weight: 500;
@@ -52,7 +52,7 @@
 }
 
 .nav-links {
-  color: #ffcb99;
+  color: whitesmoke;
   text-decoration: none;
   padding: 0.7rem 1rem;
   font-size: 1rem;
@@ -65,8 +65,8 @@
 }
 
 .nav-links:hover {
-  background-color: #ffcb99;
-  color: #660000;
+  background-color: #8010F6;
+  color: white;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
 }
@@ -76,8 +76,8 @@
   padding: 0.7rem 1rem;
   font-size: 1rem;
   font-weight: 500;
-  background-color: #ffcb99;
-  color: #660000;
+  background-color: #8010F6;
+  color: white;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
 }
@@ -123,7 +123,7 @@ button:hover {
 
 .logo-container p {
   font-size: 0.6rem; /* Adjust as needed for the desired size */
-  color: #ffcb99;   /* This will make it have the same color as the navbar logo */
+  color: whitesmoke;   /* This will make it have the same color as the navbar logo */
   margin: 0;        /* Remove any default margins */
   padding-top: 4px;
   text-align: center; /* Give it a little space from the title above */
@@ -132,14 +132,14 @@ button:hover {
 @media screen and (max-width: 850px) {
 
   .active {
-    background: #ffcb99;
+    background: #8010F6;
     transition: none;
     border-radius: 0;
     padding: 0.7rem 1rem;
     font-size: 1rem;
     font-weight: 500;
-    background-color: #ffcb99;
-    color: #660000;
+    background-color: #8010F6;
+    color: #8010F6;
 }
 
   .NavbarItems {
@@ -153,7 +153,7 @@ button:hover {
     -webkit-backdrop-filter: blur(4px); */
     
     border: 1px solid rgba(255, 255, 255, 0.18);
-    background-color: #660000;
+    background-color: #2a2a2a;
     border-radius: 13px;
     display: flex;
     flex-direction: column;
@@ -178,7 +178,7 @@ button:hover {
   }
 
   .navbar-logo {
-    color: #ffcb99;
+    color: whitesmoke;
     font-size: 1.7rem;
     cursor: pointer;
     font-weight: 500;
@@ -193,7 +193,7 @@ button:hover {
   }
 
   .nav-links:hover {
-    background: #ffcb99;
+    background: 8010F6;
     transition: none;
     border-radius: 0;
   }
@@ -224,11 +224,11 @@ button:hover {
   }
   
   .fa-times {
-    color: #ffeddd;
+    color: whitesmoke;
   }
 
   .fa-bars {
-    color: #ffeddd
+    color: whitesmoke
   }
 
   button {

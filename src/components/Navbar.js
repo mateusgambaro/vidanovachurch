@@ -22,8 +22,8 @@ class Navbar extends Component {
             loading="lazy"
           />
           <div className="title-container">
-            <h1 className="navbar-logo">Dias & Sola</h1>
-            <p>ADVOGADAS ASSOCIADAS</p>
+            <h1 className="navbar-logo">Vida Nova</h1>
+            <p>CHURCH</p>
           </div>
         </div>
         <div className="menu-icons" onClick={this.handleClick}>

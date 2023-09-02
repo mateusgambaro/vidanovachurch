@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
   }
   .route-mid {
     width: 100%;
@@ -24,8 +25,9 @@
     width: 100vw;
     height: 70vh; 
     object-fit: cover;
-    object-position: 50% 60%;
+    object-position: 50% 40%;
     filter: blur(3px) brightness(0.8);
+    margin: 0;
   }
 
   .route-text {
@@ -39,7 +41,7 @@
   .route-text h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    background: #ffeddd ;
+    background: whitesmoke ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

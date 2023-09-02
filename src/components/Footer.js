@@ -1,5 +1,5 @@
 import "./FooterStyles.css";
-import icone_white from "../assets/icone_white.png";
+import icone_white from "../assets/icone_logo_white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin, faPhone } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,15 +11,15 @@ const Footer = () => {
           <div className="logo">
             <img src={icone_white} alt="icone_logo" className="logo-image" />
             <div>
-              <h1>Dias & Sola</h1>
-              <p>ADVOGADAS ASSOCIADAS</p>
+              <h1>Vida Nova</h1>
+              <p>CHURCH</p>
             </div>
           </div>
           <div>
-            <a href="https://www.facebook.com/diasesolaadv" target="_noblank">
+            <a href="https://www.facebook.com/vidanovasantos/?locale=pt_BR" target="_noblank">
               <i className="fa-brands fa-facebook-square"></i>
             </a>
-            <a href="https://www.instagram.com/diasesola.adv" target="_noblank">
+            <a href="https://www.instagram.com/vidanovasede/" target="_noblank">
               <i className="fa-brands fa-instagram-square"></i>
             </a>
           </div>
@@ -29,15 +29,10 @@ const Footer = () => {
           <div>
             <h4>Endereço</h4>
             <p style={{ marginBottom: "10px" }}>
-              <strong>Unidade Sorocaba</strong> - R. Belmira Loureiro de
-              Almeida, 525 - Sala 32, Jardim Piratininga, Sorocaba - SP
-            </p>
-            <p>
-              <strong>Unidade Tapiraí</strong> - Av. Raul Leite Magalhães, 430,
-              Centro, Tapiraí - SP
+              <strong>Unidade Santos</strong> - R. Doutor Manoel Tourinho, 171 - Macuco, Santos/SP
             </p>
             <br />
-            <p>(15) 99775-5599 - (15) 3326-8128</p>
+            <p>(13) 99791-2709</p>
             {/* <a href="https://fontawesome.com/">Changelog</a>
             <a href="https://fontawesome.com/">Status</a>
             <a href="https://fontawesome.com/">License</a>

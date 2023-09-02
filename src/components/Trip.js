@@ -1,49 +1,60 @@
 import "./TripStyles.css";
 import TripData from "./TripData";
-import handShake from "../assets/hand-shake.svg";
-import contract from "../assets/contract.svg";
-import portfolio from "../assets/portfolio.svg";
-import { serviceMessages } from "src/messages/services";
+import handShake from "../assets/vidanovakids.png";
+import contract from "../assets/tweens.jpeg";
+import portfolio from "../assets/business.jpeg";
+import xj from "../assets/xj.jpeg";
+import maos from "../assets/maoscomumamissao.jpeg";
+import salvavidas from "../assets/salvavidas.jpeg";
 
 function Trip() {
-  const retirement = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.retirement}`;
-  const foresight = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.foresight}`;
-  const assistanceBenefitsReview = `https://api.whatsapp.com/send?phone=+55${process.env.REACT_APP_PHONE_NUMBER}&text=${serviceMessages.assistanceBenefitsReview}`;
-
   return (
     <div className="trip">
-      <h1 style={{ marginBottom: "10px" }}>Serviços</h1>
-      <p>Como podemos te ajudar?</p>
-      <div className="tripcard" style={{marginBottom: '40px'}}>
+      <h1 style={{ marginBottom: "10px" }}>Departamentos</h1>
+      <p>Conheça os projetos da nossa equipe</p>
+      <div className="tripcard" style={{ marginBottom: "40px" }}>
         <TripData
           image={contract}
-          heading="Planejamento Previdenciário"
-          text="Estudo detalhado do histórico previdenciário, com análise de pendências no Cadastro Nacional de Informações Sociais (CNIS), hipóteses de aposentadoria e simulações de contribuições futuras."
-          secondText="O Planejamento Previdenciário permite identificar o melhor momento para requerer a aposentadoria e qual estratégia seguir para receber o benefício de maior valor. "
-          btnClass="show"
-          buttonText="Realizar planejamento"
-          url={foresight}
+          heading="Radical Tweens"
+          text="O Radical Tweens é um grupo destinado aos Pré Adolescentes, de 11 aos 14 anos."
+          secondText=" O propósito do departamento é auxilia-los no desenvolvimento deste início da caminhada Cristã. Com ministrações, aconselhamentos e atividades voltada para faixa etária deles. 
+          Nossa missão é formar uma geração de Pré Adolescentes apaixonados por Jesus!"
         />
         <TripData
           image={handShake}
-          heading="Aposentadorias e Benefícios Previdenciários"
-          text="Requerimento e acompanhamento individualizado do benefício, junto ao sistema exclusivo para advogados (Meu INSS Digital)."
-          btnClass="show"
-          buttonText="Quero me aposentar"
-          url={retirement}
+          heading="Vida Nova Kids"
+          text="O Ministério Kids é um lugar de amor e pastoreio das crianças."
+          secondText="Tem como objetivo alcança-las  e torna-las discípulos de Jesus.
+          Elas encontram um ambiente seguro e de muito aprendizado. Com voluntários dedicados no propósito de ensinar sobre Jesus de  maneira lúdica e cativante.
+           Nesse lugar elas tem experiencias incríveis de aprendizado e adoração."
         />
         <TripData
-           image={portfolio}
-           heading="Benefício Assistencial"
-           text="Benefício de um salário-mínimo devido à pessoa com deficiência e ao idoso com 65 anos ou mais, que comprovem não possuir condições de prover o próprio sustento."
-           secondText="Requerimento, análise e agendamento de perícias medicas e avaliações sociais pelo sistema exclusivo do advogado (Meu INSS digital)."
-           btnClass="show"
-           buttonText="Tenho o benefício?"
-           url={assistanceBenefitsReview}
+          image={portfolio}
+          heading="Vida Nova Business"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend mauris non placerat ullamcorper. Praesent mollis vehicula lectus vehicula ornare. "
+          secondText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend mauris non placerat ullamcorper. Praesent mollis vehicula lectus vehicula ornare. "
+        />
+        <TripData
+          image={xj}
+          heading="Conexão Jovem"
+          text="O Conexão Jovem é o grupo de jovens da Vida Nova Church."
+          secondText="Somos a geração que assume a responsabilidade de obedecer Aquele que nos chamou. Trabalhamos com jovens a partir dos 18 anos, em uma caminha de comunhão e santidade, procurando sempre estar mais próximos do Pai, com cultos direcionados e encontros onde o Senhor se faz presente"
+        />
+        <TripData
+          image={maos}
+          heading="Mãos com uma missão"
+          text="Descubra o amor em ação através do Projeto Mãos Com Uma Missão da Secretaria de Missões. Capacitamos indivíduos em ações significativas, como costura e culinária pelo Projeto DORCAS, alfabetização através do Projeto Sementinha, e conexão com comunidades através de contação de histórias, oficinas de pipas e bonecas. De vilarejos a nações como Bolívia, Paraguai, Cuba, Haiti, África e Oriente Médio, estendemos ajuda humanitária, promovendo dignidade e alegria."
+          secondText=""
+        />
+        <TripData
+          image={salvavidas}
+          heading="Novos Convertidos"
+          text="Lugar de comunhão e  de alicerçar pessoas que se convertem  com conhecimento básico da fé crista, dando ao novo convertido sentido de mordomia onde ele encontrara lugar no corpo para desenvolver os dons que receber da parte de Deus."
+          
         />
       </div>
-      <a href="/service" className="looking-link">
-        Procurando mais?
+      <a href="/about" className="looking-link">
+        Quero saber mais
       </a>
     </div>
   );

@@ -1,59 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeHeroStyles.css";
-import Typed from "typed.js";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaCross } from "react-icons/fa";
+import { Modal } from "antd";
+import ClassScheduleCard from "./Schedule";
 
 function HomeHero(props) {
-  const el = React.useRef(null);
-  const typed = React.useRef(null);
+  const [modal2Open, setModal2Open] = useState(false);
 
-  React.useEffect(() => {
-    const options = {
-      strings: [
-        "<strong>Planejamento Previdenciário</strong>",
-        "<strong>Aposentadoria</strong>",
-        "<strong>Beneficio Assistencial</strong>",
-      ],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true
-    };
-
-    typed.current = new Typed(el.current, options);
-
-    return () => {
-      typed.current.destroy();
-    };
-  }, []);
+  const dayAndHour = [
+    {
+      day: "Segunda-feira",
+      time: "15h00",
+      discipline: "Tarde do Clamor"
+    },
+    {
+      day: "Quarta-feira",
+      time: "20h00",
+      discipline: "Nome do Culto"
+    },
+    {
+      day: "Sexta-feira",
+      time: "19h30",
+      discipline: "Nome do Culto"
+    },
+    {
+      day: "Domingo",
+      time: "18h00",
+      discipline: "Nome do Culto"
+    }
+  ];
   return (
-    <div className="hero-background">
-      <img
-        src={props.coverImg}
-        alt="Background Cover"
-        className="background-image"
-        loading="lazy" 
-      />
-      <div className={props.cName}>
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>{props.title}</h1>
-            <h2>{props.subtitle}</h2>
-            <div className="typed-title-container">
-              <span className="static-text">{props.text}</span>
-              <div style={{display: 'flex', justifyContent: 'center'}}>
-                <span className="typed-title" ref={el} />
-              </div>
+    <>
+      <div className="hero-background">
+        <img
+          src={props.coverImg}
+          alt="Background Cover"
+          className="background-image"
+          loading="lazy"
+        />
+        <div className={props.cName}>
+          <div className="hero-content">
+            <div className="hero-text">
+              <h1>{props.title}</h1>
+              <h2>{props.subtitle}</h2>
+              <button className={props.btnClass} onClick={() => setModal2Open(true)}>
+                <FaCross className="whatsapp-icon" /> {props.buttonText}
+              </button>
             </div>
-            <a className={props.btnClass} href={props.url}>
-              <FaWhatsapp className="whatsapp-icon" /> {props.buttonText}
-            </a>
-          </div>
-          <div className="hero-image-container">
-            <img src={props.heroImg} alt="heroImg" className="heroImg" loading="lazy" />
           </div>
         </div>
       </div>
-    </div>
+      <Modal
+        title="Horários do culto"
+        centered
+        style={{ top: 20 }}
+        open={modal2Open}
+        onOk={() => setModal2Open(false)}
+        onCancel={() => setModal2Open(false)}
+        footer={null}
+      >
+        {dayAndHour.map((date) => (
+          <ClassScheduleCard
+            day={date.day}
+            time={date.time}
+            subject={date.discipline}
+          />
+        ))}
+      </Modal>
+    </>
   );
 }
 

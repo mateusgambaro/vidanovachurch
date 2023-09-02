@@ -1,8 +1,7 @@
 import Navbar from "../components/Navbar";
 import RoutesHero from "../components/RoutesHero";
-import Office from "../components/Office";
 import Footer from "../components/Footer";
-import Equipe from "../assets/time.webp";
+import Equipe from "../assets/departamento.jpeg";
 import Destination from "src/components/Destination";
 
 function About() {
@@ -12,11 +11,10 @@ function About() {
       <RoutesHero
         cName="route-mid"
         routeImg={Equipe}
-        title="Conheça nossa equipe e escritório"
+        title="Conheça nossos projetos e ações"
         btnClass="hide"
       />
       <Destination />
-      <Office />
       <Footer />
     </>
   );
