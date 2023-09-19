@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
   }
   
   
@@ -63,22 +64,27 @@
     margin-top: 10%;
     justify-content: center;
     text-decoration: none;
-    background: #9EC1A3;
+    background: #64bd72;
     padding: 1rem 2rem;
     border-radius: 6px;
     font-size: 1.1rem;
     font-weight: bold;
     vertical-align: middle;
     letter-spacing: 2px;
-    color: #ffeddd;
+    color: white;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* New shadow */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* New transition */
     cursor: pointer;  /* Indicates clickable area */
   }
+
+  .address {
+    margin-top: 50px;
+    font-size: 14px;
+  }
   
   /* Hover effect for the button */
   .s-card .show:hover {
-    background: #86b091; 
+    background: #64bd72; 
     transform: translateY(-3px);  /* Gives a subtle lift effect */
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12);  /* Increase shadow on hover for depth */
   }
@@ -86,9 +92,31 @@
   
   .show .whatsapp-icon {
     font-size: 1.2rem;
-    color: #ffeddd;
+    color: white;
     vertical-align: middle; 
     margin-right: 8px;    
+  }
+  
+  .vnb-button {
+    text-decoration: none;
+    background: #8010F6;
+    padding: 1.5rem 8rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* New shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* New transition */
+    cursor: pointer;  /* Indicates clickable area */
+  }
+  
+  /* Hover effect for the button */
+  .vnb-button:hover {
+    background: #8c5dbe; 
+    transform: translateY(-3px);  /* Gives a subtle lift effect */
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12);  /* Increase shadow on hover for depth */
   }
   
   .texts {
@@ -153,5 +181,31 @@
       align-items: center;
       background-color: #fff; 
     }
+
+    button {
+      display: block;
+    }
+    .vnb-button {
+      text-decoration: none;
+      background: #8010F6;
+      padding: 1.5rem 5rem;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      vertical-align: middle;
+      letter-spacing: 2px;
+      color: white;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* New shadow */
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* New transition */
+      cursor: pointer;  /* Indicates clickable area */
+    }
+    
+    /* Hover effect for the button */
+    .vnb-button:hover {
+      background: #8c5dbe; 
+      transform: translateY(-3px);  /* Gives a subtle lift effect */
+      box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12);  /* Increase shadow on hover for depth */
+    }
+    
   }
   

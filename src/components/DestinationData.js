@@ -18,14 +18,14 @@ class DestinationData extends Component {
           <p className="first-text">{this.props.thirdText}</p>
           <p className="first-text">{this.props.fourthText}</p>
           <p className="first-text">{this.props.fifthText}</p>
-        <div className="social-icons">
+        {/* <div className="social-icons">
             <a href={this.props.linkedinUrl} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a href={this.props.linkedinUrl} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="officecard">
         {this.props.images.map((img, index) => (

@@ -13,12 +13,13 @@ function ServicesData(props) {
         <h4 style={{ textAlign: "center" }}>{props.heading}</h4>
         <p style={{ marginBottom: "10px" }}>{props.text}</p>
         <p>{props.secondText}</p>
+        <p className="address">{props.address}</p>
       </div>
       <div className="social-icons">
-        <a href={props.linkedinUrl} target="_blank" rel="noreferrer">
+        <a href={props.instagram} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
-        <a href={props.linkedinUrl} target="_blank" rel="noreferrer">
+        <a href={props.facebook} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
       </div>

@@ -16,17 +16,17 @@ function HomeHero(props) {
     {
       day: "Quarta-feira",
       time: "20h00",
-      discipline: "Nome do Culto"
+      discipline: "Culto"
     },
     {
       day: "Sexta-feira",
       time: "19h30",
-      discipline: "Nome do Culto"
+      discipline: "Culto"
     },
     {
       day: "Domingo",
       time: "18h00",
-      discipline: "Nome do Culto"
+      discipline: "Culto"
     }
   ];
   return (

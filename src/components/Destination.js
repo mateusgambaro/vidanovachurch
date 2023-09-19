@@ -1,5 +1,8 @@
 import React from "react";
-import projects from "../assets/projects.jpeg";
+import kids_1 from "../assets/kids_1.jpg";
+import kids_2 from "../assets/kids_2.jpg";
+import kids_3 from "../assets/kids_3.jpg";
+import kids_4 from "../assets/kids_4.jpg";
 import rtweens_1 from "../assets/rtweens_1.jpg"
 import rtweens_2 from "../assets/rtweens_2.jpg"
 import rtweens_3 from "../assets/rtweens_3.jpg"
@@ -16,6 +19,9 @@ import convert_1 from "../assets/convert_1.jpg"
 import convert_2 from "../assets/convert_2.jpg"
 import convert_3 from "../assets/convert_3.jpg"
 import convert_4 from "../assets/convert_4.jpg"
+import worship_1 from "../assets/worship_1.jpg"
+import worship_2 from "../assets/worship_2.jpg"
+import worship_3 from "../assets/worship_3.jpg"
 import DestinationData from "./DestinationData";
 
 const Destination = () => {
@@ -42,7 +48,7 @@ const Destination = () => {
           text="O Ministério Kids é um espaço repleto de amor e dedicação, especialmente designado para o cuidado e orientação das crianças. Nosso principal objetivo é estabelecer um elo genuíno com cada criança, guiando-as para se tornarem discípulas de Jesus de forma significativa e impactante."
           secondText="Neste ambiente acolhedor, priorizamos a segurança e o enriquecimento do aprendizado das crianças. Contamos com uma equipe de voluntários apaixonados, unidos pelo propósito de transmitir os ensinamentos de Jesus de maneira cativante e envolvente, utilizando abordagens lúdicas que tornam a experiência de aprendizado ainda mais empolgante."
           thirdText="No Ministério Kids, cada criança é convidada a embarcar em jornadas de aprendizado memoráveis, onde a adoração e a educação andam de mãos dadas. Proporcionamos a elas oportunidades incríveis para crescer espiritualmente, oferecendo não apenas conhecimento, mas também experiências marcantes de conexão com a fé e com a comunidade. "
-          images={[projects, projects, projects, projects ]}
+          images={[kids_1, kids_2, kids_3, kids_4 ]}
         />
         <DestinationData
           className="first-des"
@@ -66,6 +72,12 @@ const Destination = () => {
           secondText="O Discipulado Dominical oferece uma base sólida, enquanto visitas semanais fortalecem os laços. Almoços e ceias com a liderança proporcionam orientação, e eventos de evangelismo mensais alcançam a comunidade."
           thirdText="Retiros espirituais anuais aprofundam a fé, e iniciativas de apoio financeiro fortalecem os trabalhos. Este é um espaço onde a fé se fortalece, os relacionamentos florescem e a jornada espiritual se desenvolve autenticamente."
           images={[convert_1, convert_2, convert_3, convert_4 ]}
+        />
+         <DestinationData
+          className="first-des-reverse"
+          heading="Vida Nova Worship"
+          text="Vida Nova Worship é o ministério de louvor da Vida Nova Sede, e tem como objetivo e função levar a palavra de Deus através dos louvores e das canções vindas direto do trono de Deus, um grupo direcionado em um só propósito, em uma só direção e em um só desejo, que é de adorar em Espirito e em verdade de forma excelente, pois é assim que o Pai merece ser adorado."
+          images={[worship_1, worship_2, worship_3 ]}
         />
       </div>
     </>

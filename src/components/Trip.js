@@ -6,6 +6,7 @@ import portfolio from "../assets/business.jpeg";
 import xj from "../assets/xj.jpeg";
 import maos from "../assets/maoscomumamissao.jpeg";
 import salvavidas from "../assets/salvavidas.jpeg";
+import vidanovaworship from '../assets/VidaNovaWorship.jpg'
 
 function Trip() {
   return (
@@ -31,8 +32,7 @@ function Trip() {
         <TripData
           image={portfolio}
           heading="Vida Nova Business"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend mauris non placerat ullamcorper. Praesent mollis vehicula lectus vehicula ornare. "
-          secondText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend mauris non placerat ullamcorper. Praesent mollis vehicula lectus vehicula ornare. "
+          text="Nossa missão é unir empresários, profissionais e autônomos determinados a vencer e prosperar. Dentro do Ministério Vida Nova, com 83 igrejas e 8 mil membros, criamos uma rede de negócios. Empresas parceiras têm acesso a nossa vasta comunidade, oferecendo descontos em troca, promovidos através de canais como WhatsApp, site, rádio online e TV na Band. Junte-se a nós nesta jornada rumo ao sucesso empresarial."
         />
         <TripData
           image={xj}
@@ -50,7 +50,11 @@ function Trip() {
           image={salvavidas}
           heading="Novos Convertidos"
           text="Lugar de comunhão e  de alicerçar pessoas que se convertem  com conhecimento básico da fé crista, dando ao novo convertido sentido de mordomia onde ele encontrara lugar no corpo para desenvolver os dons que receber da parte de Deus."
-          
+        />
+        <TripData
+          image={vidanovaworship}
+          heading="Vida Nova Worship"
+          text="Vida Nova Worship é o ministério de louvor da Vida Nova Sede, e tem como objetivo e função levar a palavra de Deus através dos louvores e das canções vindas direto do trono de Deus, um grupo direcionado em um só propósito, em uma só direção e em um só desejo, que é de adorar em Espirito e em verdade de forma excelente, pois é assim que o Pai merece ser adorado."
         />
       </div>
       <a href="/about" className="looking-link">

@@ -11,7 +11,7 @@ function Service() {
       <RoutesHero
         cName="route-mid"
         routeImg={servicos}
-        title="Potencialize o seu negócio"
+        title="Unindo Empresários para o Sucesso e Prosperidade"
         btnClass="hide"
       />
       <Services />
