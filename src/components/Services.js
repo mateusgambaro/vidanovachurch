@@ -3,6 +3,9 @@ import "./ServiceStyles.css";
 import contract from "../assets/contract.svg";
 import caipiralogo from "../assets/caipiralogo.jpg";
 import vidanova from "../assets/vidanova.jpg";
+import elizabeteLogo from "../assets/elizabete.jpeg"
+import memocashlogo from "../assets/memocashlogo.gif"
+import donacututaLogo from "../assets/donacututa.png"
 import vidanova_1 from "../assets/vidanova_1.jpeg";
 import vidanova_2 from "../assets/vidanova_2.jpeg";
 import vidanova_3 from "../assets/vidanova_3.jpeg";
@@ -19,6 +22,9 @@ import { useSnackbar } from "notistack";
 
 function Services() {
   const retirement = `https://api.whatsapp.com/send?phone=+5513997912709&text=Olá!`;
+  const elizabete = `https://api.whatsapp.com/send?phone=+5513974034958&text=Olá!`;
+  const donacututa = `https://api.whatsapp.com/send?phone=+551333945134&text=Olá!`;
+  const memocash = `https://api.whatsapp.com/send?phone=+5512996016111&text=Olá!`;
   const images = [vidanova, vidanova_1, vidanova_2, vidanova_3];
 
   const { enqueueSnackbar } = useSnackbar();
@@ -48,7 +54,9 @@ function Services() {
       .then(
         (result) => {
           setLoading(false);
-          enqueueSnackbar("Solicitação enviada com sucesso!", { variant: "success" });
+          enqueueSnackbar("Solicitação enviada com sucesso!", {
+            variant: "success"
+          });
 
           if (formRef.current) {
             formRef.current.reset();
@@ -123,9 +131,12 @@ function Services() {
         </div>
       </div>
       <button className="vnb-button" onClick={() => setModal2Open(true)}>
-        Quero participar!  
+        Quero participar!
       </button>
-      <p style={{marginTop: '30px', marginBottom: '80px'}}>Preencha o formulário com seus dados clicando no botão acima e nossa equipe entrará em contato com você.</p>
+      <p style={{ marginTop: "30px", marginBottom: "80px" }}>
+        Preencha o formulário com seus dados clicando no botão acima e nossa
+        equipe entrará em contato com você.
+      </p>
       <Modal
         title="Faça parte do Vida Nova Business"
         centered
@@ -215,62 +226,40 @@ function Services() {
           buttonText="Entrar em contato"
           instagram="https://www.instagram.com/caipira_voador"
           facebook="https://www.facebook.com/AutoramaCaipiraVoador"
+          website="https://www.caipiravoador.com.br/"
           url={retirement}
         />
+
         <ServicesData
-          image={contract}
-          heading="Nome da empresa"
-          text="Descrição breve"
+          image={memocashlogo}
+          heading="MemoCash Soluções"
+          text="Os sistemas MemoCash de Vendas e Gestão descomplicam seu negócio."
+          secondText="Nossos sistemas são ideais para que você faça o controle do seu estoque, emita notas fiscais,  venda mais e otimize a gestão financeira do seu negócio. Venda mesmo sem internet e tenha acesso das informações de sua empresa de qualquer lugar."
           btnClass="show"
           buttonText="Entrar em contato"
+          website="https://memocashsolucoes.com.br"
+          url={memocash}
         />
         <ServicesData
-          image={contract}
-          heading="Nome da empresa"
-          text="Descrição breve"
+          image={elizabeteLogo}
+          heading="Elizabete Lima - Consultora de beleza MK"
+          text="Consultora de beleza. Elevar sua autoestima.  E ajudar você  a ter uma renda extra.  "
+          address="Rua Prudente de Moraes 75 sala 55 Vila Mathias - Santos/SP"
           btnClass="show"
           buttonText="Entrar em contato"
-        />
-        {/* <ServicesData
-          image={contract}
-          heading="Nome da empresa"
-          text="Descrição breve"
-          btnClass="show"
-          buttonText="Entrar em contato"
-          url={retirement}
+          instagram="https://www.instagram.com/elizabetemk"
+          url={elizabete}
         />
         <ServicesData
-          image={contract}
-          heading="Nome da empresa"
-          text="Descrição breve"
+          image={donacututaLogo}
+          heading="DonaCututa Gastronomia"
+          text="Comida mineira, cafeteria, doces e artesanatos."
+          address="Santos/SP"
           btnClass="show"
           buttonText="Entrar em contato"
-          url={retirement}
+          instagram="https://www.instagram.com/donacututa"
+          url={donacututa}
         />
-        <ServicesData
-          image={contract}
-          heading="Nome da empresa"
-          text="Descrição breve"
-          btnClass="show"
-          buttonText="Entrar em contato"
-          url={retirement}
-        />
-        <ServicesData
-          image={contract}
-          heading="Nome da empresa"
-          text="Descrição breve"
-          btnClass="show"
-          buttonText="Entrar em contato"
-          url={retirement}
-        />
-        <ServicesData
-          image={contract}
-          heading="Nome da empresa"
-          text="Descrição breve"
-          btnClass="show"
-          buttonText="Entrar em contato"
-          url={retirement}
-        /> */}
       </div>
     </div>
   );
