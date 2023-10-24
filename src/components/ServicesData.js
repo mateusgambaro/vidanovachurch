@@ -14,6 +14,8 @@ function ServicesData(props) {
         <h4 style={{ textAlign: "center" }}>{props.heading}</h4>
         <p style={{ marginBottom: "10px" }}>{props.text}</p>
         <p>{props.secondText}</p>
+        <p>{props.thirdText}</p>
+        <p>{props.fourthText}</p>
         <p className="address">{props.address}</p>
       </div>
       <div className="social-icons">

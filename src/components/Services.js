@@ -19,12 +19,14 @@ import { Modal } from "antd";
 import emailjs from "emailjs-com";
 import { Button, CircularProgress, TextField } from "@mui/material";
 import { useSnackbar } from "notistack";
+import TMLogo from "../assets/tmlogo.jpeg"
 
 function Services() {
   const retirement = `https://api.whatsapp.com/send?phone=+5513997912709&text=Olá!`;
   const elizabete = `https://api.whatsapp.com/send?phone=+5513974034958&text=Olá!`;
   const donacututa = `https://api.whatsapp.com/send?phone=+551333945134&text=Olá!`;
   const memocash = `https://api.whatsapp.com/send?phone=+5512996016111&text=Olá!`;
+  const TM = `https://api.whatsapp.com/send?phone=+5513997037922&text=Olá!`;
   const images = [vidanova, vidanova_1, vidanova_2, vidanova_3];
 
   const { enqueueSnackbar } = useSnackbar();
@@ -259,6 +261,18 @@ function Services() {
           buttonText="Entrar em contato"
           instagram="https://www.instagram.com/donacututa"
           url={donacututa}
+        />
+          <ServicesData
+          image={TMLogo}
+          heading="T.M. Serviços e Reparos"
+          text="Ar Condicionado"
+          secondText="Instalações Elétricas"
+          thirdText="Marido de aluguel"
+          fourthText="Montador de móveis"
+          address="Santos/SP"
+          btnClass="show"
+          buttonText="Entrar em contato"
+          url={TM}
         />
       </div>
     </div>
